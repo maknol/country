@@ -34,4 +34,8 @@ include_once 'classes/darjava.php';
 
 $getCountry = $oIMDB->getCountry();
 
-$country=parseCountry($getCountry);
+$country=parseCountry($getCountry); // Ще върне имената на български
+
+или 
+
+$country=Country2id($getCountry); // Ще преобразува в ИД-та
